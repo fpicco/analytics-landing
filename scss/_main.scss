@@ -1,0 +1,55 @@
+main {
+  background-color: $bg-secondary;
+  .heroe {
+    background-color: $bg-primary;
+    height: 500px;
+    @extend %flex-start;
+    .heroe-container {
+      width: 40%;
+      margin-left: 10%;
+      h1 {
+        color: #fff;
+        font-size: 3.125rem;
+        line-height: 3.75rem;
+        font-weight: 700;
+      }
+      p {
+        @extend %paragraph-L;
+        margin: 1rem 0;
+      }
+      a {
+        @extend %btn-active;
+      }
+    }
+    .heroe-img{
+        height: 90%;
+        width: 50%;
+    }
+  }
+  .features,
+  .pricing {
+    h2 {
+      @extend %h2-main;
+    }
+    h4 {
+      @extend %h4-main;
+    }
+    p {
+      @extend %paragraph-S;
+    }
+  }
+  .products {
+    h2 {
+      @extend %h2-main;
+    }
+    p {
+      @extend %paragraph-S;
+    }
+  }
+  .pricing {
+    background-color: $bg-primary;
+    a {
+      @extend %btn-waiting;
+    }
+  }
+}

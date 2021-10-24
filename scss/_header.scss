@@ -1,0 +1,23 @@
+header {
+  @extend %flex-around;
+  background-color: $bg-primary;
+  height: 5rem;
+  .logo {
+    color: #fff;
+  }
+  nav,
+  ul {
+    color: $text-secondary;
+    li {
+      margin: 0.7rem;
+    }
+  }
+  ul {
+    li {
+      a {
+        @extend %btn-waiting;
+        display: inline;
+      }
+    }
+  }
+}

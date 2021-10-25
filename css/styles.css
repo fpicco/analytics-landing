@@ -1,5 +1,6 @@
 /* Media queries */
 /* --------------------------------- Example -------------------------------- */
+/* ---------------------------------- flex styles ---------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 header, footer {
   display: -webkit-box;
@@ -7,6 +8,18 @@ header, footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .features .features-container, main .features .features-container div, main .products .products-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,6 +37,7 @@ main .heroe {
           align-items: center;
 }
 
+/* ----------------------------- Buttons styles ----------------------------- */
 main .heroe .heroe-container a {
   background-color: #EF2A82;
   border-radius: 15px;
@@ -41,6 +55,7 @@ header ul li a, main .pricing a {
   margin: 0.3rem;
 }
 
+/* ---------------------------- Paragraphs styles --------------------------- */
 main .heroe .heroe-container p {
   color: #8794BA;
   font-size: 1.125rem;
@@ -56,6 +71,7 @@ main .pricing p, main .products p {
   line-height: 1.4em;
 }
 
+/* ----------------------------- Headings styles ---------------------------- */
 main .features h2,
 main .pricing h2, main .products h2 {
   color: #172755;
@@ -70,6 +86,21 @@ main .pricing h4 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.172rem;
+}
+
+/* ------------------------------ Icons styles ------------------------------ */
+main .features p i {
+  font-size: 2.7rem;
+  color: #EF2A82;
+}
+
+/* ------------------------------ Images styles ----------------------------- */
+main .heroe .heroe-img:hover, main .products .products-container div div img:hover {
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 * {
@@ -160,6 +191,72 @@ main .heroe .heroe-container p {
 main .heroe .heroe-img {
   height: 90%;
   width: 50%;
+}
+
+main .features h2,
+main .pricing h2 {
+  text-align: center;
+}
+
+main .features {
+  padding: 3rem 0 0 0;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+main .features h2 {
+  margin: 2rem 0 1rem;
+}
+
+main .features p {
+  text-align: center;
+}
+
+main .features .features-container {
+  padding: 3rem 0;
+}
+
+main .features .features-container div {
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .features .features-container div h4 {
+  margin: 0.5rem;
+}
+
+main .products p {
+  margin: 1rem 0;
+}
+
+main .products .products-container {
+  width: 80%;
+  margin: auto;
+}
+
+main .products .products-container div {
+  margin: 1rem;
+}
+
+main .products .products-container div .products-text {
+  margin-left: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+
+main .products .products-container div .middle-text {
+  margin: 0 3rem 0;
+}
+
+main .products .products-container div div img {
+  margin: -1rem;
+  width: 150%;
 }
 
 main .pricing {

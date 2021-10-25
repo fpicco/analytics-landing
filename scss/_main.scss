@@ -21,15 +21,19 @@ main {
         @extend %btn-active;
       }
     }
-    .heroe-img{
-        height: 90%;
-        width: 50%;
+    .heroe-img {
+      height: 90%;
+      width: 50%;
+      &:hover{
+        @extend %img-hover;
+    }
     }
   }
   .features,
   .pricing {
     h2 {
       @extend %h2-main;
+      text-align: center;
     }
     h4 {
       @extend %h4-main;
@@ -38,12 +42,65 @@ main {
       @extend %paragraph-S;
     }
   }
+  .features {
+    padding: 3rem 0 0 0;
+    width: 80%;
+    margin: 2rem auto;
+    h2 {
+      margin: 2rem 0 1rem;
+    }
+    p {
+      text-align: center;
+      i {
+        @extend %icons;
+      }
+    }
+    .features-container {
+      padding: 3rem 0;
+      @extend %flex-center;
+      div {
+        padding: 2rem;
+        @extend %flex-center;
+        flex-direction: column;
+        h4 {
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+
   .products {
     h2 {
       @extend %h2-main;
     }
     p {
       @extend %paragraph-S;
+      margin: 1rem 0;
+    }
+    .products-container {
+      width: 80%;
+      margin: auto;
+      div {
+        margin: 1rem;
+        @extend %flex-center;
+        .products-text {
+          margin-left: 3rem;
+          flex-direction: column;
+          width: 45%;
+        }
+        .middle-text {
+          margin: 0 3rem 0;
+        }
+        div {
+          img {
+            margin: -1rem;
+            width: 150%;
+            &:hover{
+                @extend %img-hover;
+            }
+          }
+        }
+      }
     }
   }
   .pricing {

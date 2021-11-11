@@ -198,6 +198,16 @@ main .features {
   margin: 2rem auto;
 }
 
+main .features h2:target::before {
+  background-color: red;
+  content: "";
+  display: block;
+  height: 60px;
+  /* fixed header height*/
+  margin: -60px 0 0;
+  /* negative fixed header height */
+}
+
 main .features h2 {
   margin: 2rem 0 1rem;
 }
@@ -223,7 +233,8 @@ main .features .features-container div h4 {
 }
 
 main .heroe {
-  background: #E5E5E5 url(/assets/img/background-top.png) no-repeat right top;
+  background-color: #172755;
+  background: #E5E5E5 url(../assets/img/background-top.png) no-repeat right top;
   height: 790px;
 }
 
@@ -266,7 +277,8 @@ main .pricing > p {
 }
 
 main .pricing {
-  background: #E5E5E5 url(assets/img/background-bottom.png) no-repeat right top;
+  background-color: #172755;
+  background: #E5E5E5 url(../assets/img/background-bottom.png) no-repeat right top;
   padding: 13rem 5rem 5rem;
 }
 

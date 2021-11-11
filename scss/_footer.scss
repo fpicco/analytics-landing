@@ -1,3 +1,26 @@
 footer {
   @extend %flex-around;
+  background-color: $bg-primary;
+  height: 3rem;
+  color: #ffffff;
+  width: 100%;
+  div {
+    &:nth-child(1){
+      display: flex;
+      align-items: center;
+      img{
+        padding-right: .5rem;
+      }
+    }
+    &:nth-child(2) {
+      li {
+        &:nth-child(2) {
+          padding: 0 2rem 0 3rem;
+        }
+        &:nth-child(3) {
+          padding-right: .8rem;
+        }
+      }
+    }
+  }
 }

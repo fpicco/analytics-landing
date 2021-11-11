@@ -1,21 +1,31 @@
 header {
   @extend %flex-around;
   background-color: $bg-primary;
-  background-color: none;
   height: 5rem;
+  padding-left: 5rem ;
+  position: fixed;
+  width: 100%;
+  margin-top: -5rem;
   .logo {
     color: #fff;
+    display: flex;
+    align-items: center;;
+    img{
+      width: 1.8rem;
+      margin-right: .3rem;
+    }
   }
   nav,
   ul {
     color: $text-secondary;
     li {
-      margin: 0.7rem;
+      // margin: 0.7rem;
+      padding: 0 1.5rem;
     }
   }
   ul {
     li {
-      a {
+      a.btn {
         @extend %btn-waiting;
         display: inline;
       }

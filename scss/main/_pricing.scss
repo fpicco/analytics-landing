@@ -12,21 +12,20 @@
     @extend %paragraph-S;
     margin: auto;
     text-align: center;
-    padding: 1rem 0 3rem;
+    padding: 1rem 0;
     width: 40%;
   }
 }
 .pricing {
-
     background: $bg-secondary url(/assets/img/background-bottom.png) no-repeat right top;
-   padding: 13rem;
+   padding: 13rem 5rem 5rem;
   a {
     @extend %btn-waiting;
   }
 }
 .pricing-container {
   @extend %flex-around;
-  width: 70%;
+  width: 80%;
   margin: auto;
   color: #ffffff;
   padding: 3rem 1rem;
@@ -63,8 +62,7 @@
         h5 {
           font-size: 1.87rem;
           padding: 0.3rem;
-          //   &:hover {
-          //   }
+       
         }
         padding: 1rem;
         border-radius: 0;

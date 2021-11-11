@@ -46,7 +46,7 @@ main .heroe .heroe-container a {
   padding: 0.5rem 3rem;
 }
 
-header ul li a, main .pricing a {
+header ul li a.btn, main .pricing a {
   background-color: transparent;
   border: 2px solid #8794BA;
   border-radius: 15px;
@@ -103,6 +103,10 @@ main .heroe .heroe-img:hover, main .products .products-container div div img:hov
           transform: scale(1.02);
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,16 +146,31 @@ img {
 
 body {
   background: #E5E5E5;
+  margin-top: 5rem;
 }
 
 header {
   background-color: #172755;
-  background-color: none;
   height: 5rem;
+  padding-left: 5rem;
+  position: fixed;
+  width: 100%;
+  margin-top: -5rem;
 }
 
 header .logo {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo img {
+  width: 1.8rem;
+  margin-right: .3rem;
 }
 
 header nav,
@@ -161,10 +180,10 @@ header ul {
 
 header nav li,
 header ul li {
-  margin: 0.7rem;
+  padding: 0 1.5rem;
 }
 
-header ul li a {
+header ul li a.btn {
   display: inline;
 }
 
@@ -205,12 +224,13 @@ main .features .features-container div h4 {
 
 main .heroe {
   background: #E5E5E5 url(/assets/img/background-top.png) no-repeat right top;
-  height: 780px;
+  height: 790px;
 }
 
 main .heroe .heroe-container {
   width: 40%;
   margin-left: 10%;
+  margin-top: -10%;
 }
 
 main .heroe .heroe-container h1 {
@@ -241,17 +261,17 @@ main .pricing h2 {
 main .pricing > p {
   margin: auto;
   text-align: center;
-  padding: 1rem 0 3rem;
+  padding: 1rem 0;
   width: 40%;
 }
 
 main .pricing {
   background: #E5E5E5 url(/assets/img/background-bottom.png) no-repeat right top;
-  padding: 13rem;
+  padding: 13rem 5rem 5rem;
 }
 
 main .pricing-container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   color: #ffffff;
   padding: 3rem 1rem;
@@ -352,5 +372,33 @@ main .products .products-container div .middle-text {
 main .products .products-container div div img {
   margin: -1rem;
   width: 150%;
+}
+
+footer {
+  background-color: #172755;
+  height: 3rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+footer div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div:nth-child(1) img {
+  padding-right: .5rem;
+}
+
+footer div:nth-child(2) li:nth-child(2) {
+  padding: 0 2rem 0 3rem;
+}
+
+footer div:nth-child(2) li:nth-child(3) {
+  padding-right: .8rem;
 }
 /*# sourceMappingURL=styles.css.map */

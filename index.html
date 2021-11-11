@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="assets/img/logo.png" alt="logo">
-            <p>ANALYTICS</p>
+            <a href="#">
+                <img src="assets/img/logo.png" alt="logo">
+                <p>ANALYTICS</p>
+            </a>
         </div>
         <nav>
             <ul>
@@ -54,17 +58,17 @@
                 voluptatibus repudiandae laboriosam qui quos ab odit. Officia quisquam et distinctio.</p>
 
             <div class="features-container">
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="1500">
                     <p><i class="fas fa-clock"></i></p>
                     <h4>Monitoring 24/7</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quos.</p>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="1500">
                     <p><i class="fab fa-battle-net"></i></p>
                     <h4>Widget System</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quos.</p>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-duration="1500">
                     <p><i class="fas fa-rocket"></i></p>
                     <h4>Best performance</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quos.</p>
@@ -74,17 +78,19 @@
         <section class="products" id="products">
             <div class="products-container">
                 <div>
-                    <div class="products-text">
+                    <div class="products-text" data-aos="fade-right" data-aos-duration="1500">
                         <h2>Automated Reports & Widget Alerts</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas aliquam ab ipsa, atque
                             vitae
                             consectetur?</p>
                     </div>
-                    <div><img src="assets/img/screen-01.png" alt="Graphic"></div>
+                    <div data-aos="fade-left" data-aos-duration="1500"><img src="assets/img/screen-01.png"
+                            alt="Graphic"></div>
                 </div>
                 <div>
-                    <div><img src="assets/img/screen-02.png" alt="Graphic"></div>
-                    <div class="products-text middle-text">
+                    <div data-aos="fade-right" data-aos-duration="1500"><img src="assets/img/screen-02.png"
+                            alt="Graphic"></div>
+                    <div data-aos="fade-left" data-aos-duration="1500" class="products-text middle-text">
                         <h2>Fully Customizable to address your needs</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas aliquam ab ipsa, atque
                             vitae
@@ -92,13 +98,14 @@
                     </div>
                 </div>
                 <div>
-                    <div class="products-text">
+                    <div class="products-text" data-aos="fade-right" data-aos-duration="1500">
                         <h2>Pre-built Dashboard Templates</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas aliquam ab ipsa, atque
                             vitae
                             consectetur?</p>
                     </div>
-                    <div><img src="assets/img/screen-03.png" alt="Calendar"></div>
+                    <div data-aos="fade-left" data-aos-duration="1500"><img src="assets/img/screen-03.png"
+                            alt="Calendar"></div>
                 </div>
             </div>
 
@@ -109,7 +116,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit adipisci necessitatibus perferendis quas
                 quo.</p>
             <div class="pricing-container">
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500" >
                     <div>
                         <h5>Starter</h5>
                         <p>up to 3 users</p>
@@ -120,7 +127,7 @@
                     </div>
                     <a href="#">Order</a>
                 </div>
-                <div>
+                <div data-aos="zoom-in"  data-aos-duration="700" data-aos-delay="1000">
                     <div>
                         <h5>Standart</h5>
                         <p>up to 20 users</p>
@@ -131,7 +138,7 @@
                     </div>
                     <a href="#">Order</a>
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="1500" >
                     <div>
                         <h5>Premium</h5>
                         <p>up to 200 users</p>
@@ -160,12 +167,22 @@
         </div>
         <div>
             <ul>
-                <li><p>tw </p></li>
-                <li><p>tw </p></li>
-                <li><p>tw </p></li>
+                <li>
+                    <p>tw </p>
+                </li>
+                <li>
+                    <p>tw </p>
+                </li>
+                <li>
+                    <p>tw </p>
+                </li>
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

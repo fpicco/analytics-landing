@@ -16,13 +16,13 @@
   width: 80%;
   margin: 2rem auto;
 
-  h2:target::before {
-    background-color: red;
-    content: "";
-    display: block;
-    height: 60px; /* fixed header height*/
-    margin: -60px 0 0; /* negative fixed header height */
-  }
+  // h2:target::before {
+  //   background-color: red;
+  //   content: "";
+  //   display: block;
+  //   height: 60px; /* fixed header height*/
+  //   margin: -60px 0 0; /* negative fixed header height */
+  // }
   h2 {
     margin: 2rem 0 1rem;
   }

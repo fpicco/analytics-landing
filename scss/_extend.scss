@@ -1,66 +1,54 @@
 /* ---------------------------------- flex styles ---------------------------------- */
+// Parameter: justify-content
 %flex-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flexJC(space-around);
 }
 %flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexJC(center);
 }
 %flex-start {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include flexJC(start);
 }
 %flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexJC(space-between);
 }
 /* ----------------------------- Buttons styles ----------------------------- */
-
+// Parameters:  background-color, border, border-radius, color, margin, padding 
 %btn-active {
-  background-color: $color-primary;
-  border-radius: 15px;
-  padding: 0.5rem 3rem;
-  color: #fff;
-  margin: 0.3rem;
+  @include btnConfig(
+    $color-primary,
+    medium none color,
+    15px,
+    #fff,
+    0.3rem,
+    0.5rem 3rem
+  );
 }
 %btn-waiting {
-  background-color: transparent;
-  border-radius: 15px;
-  border: 2px solid $text-secondary;
-  padding: 0.5rem 3rem;
-  color: #fff;
-  margin: 0.3rem;
+  @include btnConfig(
+    transparent,
+    2px solid $text-secondary,
+    15px,
+    #fff,
+    0.3rem,
+    0.5rem 3rem
+  );
 }
 /* ---------------------------- Paragraphs styles --------------------------- */
+// Parameters: color,font-size,font-weight,line-height
 %paragraph-L {
-  color: $text-secondary;
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.688rem;
+  @include text($text-secondary, 1.125rem, 400, 1.688rem);
 }
 %paragraph-S {
-  color: $text-secondary;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4em;
+  @include text($text-secondary, 1rem, 400, 1.4rem);
 }
 /* ----------------------------- Headings styles ---------------------------- */
+// Parameters: color,font-size,font-weight,line-height
 %h2-main {
-  color: $text-main;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 2.93rem;
+  @include text($text-main, 2.5rem, 700, 2.93rem);
 }
 %h4-main {
-  color: $text-main;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.172rem;
+  @include text($text-main, 1rem, 700, 1.172rem);
 }
 /* ------------------------------ Icons styles ------------------------------ */
 %icons {

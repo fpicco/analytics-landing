@@ -1,6 +1,28 @@
-/* --------------------------------- Example -------------------------------- */
-// @mixin parrafo($size, $weight, $color){
-//     font-size: $size;
-//     font-weight: $weight;
-//     color:$color;
-// }
+@mixin flexJC($justifyContent) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: center;
+}
+
+@mixin text($color, $fontSize, $fontWeight, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin btnConfig(
+  $bgColor,
+  $border,
+  $borderRadius,
+  $color,
+  $margin,
+  $padding
+) {
+  background-color: $bgColor;
+  border: $border;
+  border-radius: $borderRadius;
+  color: $color;
+  margin: $margin;
+  padding: $padding;
+}

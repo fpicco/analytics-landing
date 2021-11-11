@@ -1,18 +1,88 @@
 .pricing {
+  padding: 3rem 0;
   h2 {
     @extend %h2-main;
+    color: #ffffff;
     text-align: center;
   }
   h4 {
     @extend %h4-main;
   }
-  p {
+  & > p {
     @extend %paragraph-S;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    width: 40%;
   }
 }
 .pricing {
   background-color: $bg-primary;
   a {
     @extend %btn-waiting;
+  }
+}
+.pricing-container {
+  @extend %flex-around;
+  width: 70%;
+  margin: auto;
+  color: #ffffff;
+  padding: 3rem 1rem;
+  div {
+    background-color: $cards;
+    border-radius: 20px;
+    padding: 1rem;
+    height: 400px;
+    &:hover {
+      background-color: #ffffff;
+      color: $cards;
+      & > div {
+        background-color: transparent;
+        color: $cards;
+        h4 {
+          color: $cards;
+        }
+      }
+      a {
+        background-color: $color-primary;
+        border: 2px solid transparent;
+      }
+    }
+  }
+  & > div {
+    margin: 1rem;
+    @extend %flex-center;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    & > div {
+      background-color: transparent;
+      &:first-child {
+        h5 {
+          font-size: 1.87rem;
+          padding: 0.3rem;
+          //   &:hover {
+          //   }
+        }
+        padding: 1rem;
+        border-radius: 0;
+        border-bottom: 1px solid $text-secondary;
+      }
+    }
+    div {
+      h4 {
+        color: #ffffff;
+        font-size: 3.75rem;
+        padding: 2rem 0 0;
+        margin: 1rem;
+        span {
+          font-size: 1.87rem;
+        }
+      }
+    }
+
+    a {
+      margin: 2rem 0;
+    }
   }
 }

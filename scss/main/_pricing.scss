@@ -17,7 +17,9 @@
   }
 }
 .pricing {
-  background-color: $bg-primary;
+
+    background: $bg-secondary url(/assets/img/background-bottom.png) no-repeat right top;
+   padding: 13rem;
   a {
     @extend %btn-waiting;
   }

@@ -140,8 +140,13 @@ img {
   max-width: 100%;
 }
 
+body {
+  background: #E5E5E5;
+}
+
 header {
   background-color: #172755;
+  background-color: none;
   height: 5rem;
 }
 
@@ -161,10 +166,6 @@ header ul li {
 
 header ul li a {
   display: inline;
-}
-
-main {
-  background-color: #EEEEF7;
 }
 
 main .features h2,
@@ -203,8 +204,8 @@ main .features .features-container div h4 {
 }
 
 main .heroe {
-  background-color: #172755;
-  height: 500px;
+  background: #E5E5E5 url(/assets/img/background-top.png) no-repeat right top;
+  height: 780px;
 }
 
 main .heroe .heroe-container {
@@ -245,7 +246,8 @@ main .pricing > p {
 }
 
 main .pricing {
-  background-color: #172755;
+  background: #E5E5E5 url(/assets/img/background-bottom.png) no-repeat right top;
+  padding: 13rem;
 }
 
 main .pricing-container {

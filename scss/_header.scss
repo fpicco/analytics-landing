@@ -1,6 +1,7 @@
 header {
   @extend %flex-around;
   background-color: $bg-primary;
+  background-color: none;
   height: 5rem;
   .logo {
     color: #fff;

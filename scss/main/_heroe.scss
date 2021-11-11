@@ -1,6 +1,9 @@
 .heroe {
-  background-color: $bg-primary;
-  height: 500px;
+
+  background: $bg-secondary url(/assets/img/background-top.png) no-repeat right top;
+  // background-color: $bg-primary;
+  // height: 500px;
+  height: 780px;
   @extend %flex-start;
   .heroe-container {
     width: 40%;

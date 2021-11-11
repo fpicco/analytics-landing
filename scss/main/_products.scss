@@ -1,0 +1,34 @@
+.products {
+  h2 {
+    @extend %h2-main;
+  }
+  p {
+    @extend %paragraph-S;
+    margin: 1rem 0;
+  }
+  .products-container {
+    width: 80%;
+    margin: auto;
+    div {
+      margin: 1rem;
+      @extend %flex-center;
+      .products-text {
+        margin-left: 3rem;
+        flex-direction: column;
+        width: 45%;
+      }
+      .middle-text {
+        margin: 0 3rem 0;
+      }
+      div {
+        img {
+          margin: -1rem;
+          width: 150%;
+          &:hover {
+            @extend %img-hover;
+          }
+        }
+      }
+    }
+  }
+}

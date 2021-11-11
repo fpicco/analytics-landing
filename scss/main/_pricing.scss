@@ -1,0 +1,18 @@
+.pricing {
+  h2 {
+    @extend %h2-main;
+    text-align: center;
+  }
+  h4 {
+    @extend %h4-main;
+  }
+  p {
+    @extend %paragraph-S;
+  }
+}
+.pricing {
+  background-color: $bg-primary;
+  a {
+    @extend %btn-waiting;
+  }
+}
